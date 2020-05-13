@@ -1,0 +1,204 @@
+*{
+	margin:0;
+	padding:0;
+}
+button {
+	border: none;
+	background: #E294F9;
+	color: #EFEDF1;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: sans-serif;
+	font-style: italic;
+}
+
+button:hover {
+	background: #EDB9FC;
+}
+
+
+
+
+
+
+/**---------------   7  ----------------*/
+
+
+
+
+
+/**---------------   6  ----------------*/
+
+
+
+
+
+/**---------------   5  ----------------*/
+
+.padre5 {
+	display: flex;
+	justify-content: space-between; /* flex-start | space-around | space-evemly */
+	/*flex-direction: row;*/
+	border: dotted 1px;
+	height: 70px;
+	width: 50%; 
+	margin: 10px auto;
+}
+
+.hijo5{
+	height: 50px;
+	width: 50px;
+	border: groove 1px; 
+	margin: 5px;
+}
+
+
+
+
+/**---------------   4  ----------------*/
+
+.padre4 {
+	display: flex;
+	flex-direction: row;
+	border: dotted 1px;
+	height: 200px;
+	width: 50%; 
+	margin: 10px auto;
+}
+
+.hijo4{
+	height: 70px;
+	width: 70px;
+	border: groove 1px; 
+	margin: 5px;
+}
+
+/**---------------   3  ----------------*/
+@media screen and (max-width: 500px) {
+	.padre3{
+		flex-direction: column;
+	}
+}
+
+.padre3 {
+	display: flex;
+	flex-direction: row;
+	border: dotted 1px;
+	height: 200px;
+	width: 50%; 
+	margin: 10px auto;
+
+}
+.hijo3 {
+	height: 70px;
+	width: 70px;
+	border: groove 1px; 
+	margin: 5px;
+}
+
+/**---------------   2  ----------------*/
+
+.padre2 {
+	display: flex;
+	flex-direction: row-reverse;
+	border: ridge 1px;
+	width: 50%;
+	height: 20%;
+	margin: 5px auto;
+}
+
+.padre2-2 {
+	display: flex;
+	flex-direction: row;
+	border: ridge 1px;
+	width: 50%;
+	height: 20%;
+	margin: 5px auto;
+}
+
+.padre2-3 {
+	display: flex;
+	flex-direction: column;
+	border: ridge 1px;
+	width: 50%;
+	height: 20%;
+	margin: 5px auto;
+}
+.padre2-4 {
+	display: flex;
+	flex-direction: column-reverse;
+	border: ridge 1px;
+	width: 50%;
+	height: 20%;
+	margin: 5px auto;
+}
+
+/**---------------   1  ----------------*/
+
+.padre1 {
+	border: solid 1px;
+	border-radius: 20px;
+	height: 500px;
+	width: 250px;
+	margin: 20px auto;
+	display: flex;
+	/* flex-direction: row;  ALINIAR HORIZONTALMENTE */
+	flex-direction: column; /*  ALINIAR HORIZONTALMENTE */
+}
+
+.hijo1-1 {
+	border: solid 1px;
+	border-radius: 10px 10px 0 0;
+	margin: 10px;
+	height: 30px;
+}
+
+.hijo1-2 {
+	border: solid 1px;
+	margin: 0px 10px 10px 10px;
+	height: 80%;
+}
+
+.hijo1-3 {
+	border: solid 1px;
+	margin: auto;
+	margin-bottom: 10px !important;
+	width: 20%;
+	height: 10%;
+	border-radius: 50%;
+}
+
+
+
+/**---------------   0 ----------------*/
+
+.padre{
+	width:50%;		/*  Si trabas horizontalente, siempre va el WIDTH  */
+	height: 250px; /*150px;	/*  Si trabas en el eje vertical, siempre va el HEIGHT  */
+	background: #E146F8;
+	margin: 20px auto;
+	display: flex;	/*  SIEMPRO COLOCAR EL FLEX EN EL PADRE */
+	overflow-y: hidden; 
+	overflow-x: auto;
+	padding-right: 200px;
+
+}
+
+.hijo {
+	width: auto;
+	height: 100px;
+	margin: 10px;
+}
+
+.subpadre {
+	display: flex;
+}
+
+
+
+/**---------------   0.0 ----------------*/
+
+.hijo-0 {
+	border: dotted 1px;
+	margin: 10px;
+}
